@@ -21,7 +21,7 @@ export const actions = {
        await fetch('https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants',{
          headers: {
            'content-type': 'application/json',
-           'x-api-key': process.env.AwS_API_KEY
+           'x-api-key': process.env.AWS_API_KEY
          }
        }).then(response => response.json())
        .then(data=>{
